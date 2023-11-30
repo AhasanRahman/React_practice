@@ -12,6 +12,7 @@ import About from  './pages/About';
 import Contact from './pages/Contact';
 import Service from './pages/Service';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
+ 
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
     // <div className="App">
     
     // </div>
-
+  
 <BrowserRouter>
 <Routes>
   <Route path="/" element={<Home/>}></Route>
@@ -28,7 +29,6 @@ function App() {
   <Route path="/Contact" element={<Contact/>}></Route>
   </Routes>
   </BrowserRouter>
-
 
   );
 }

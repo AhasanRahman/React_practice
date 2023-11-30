@@ -1,16 +1,16 @@
- 
+import About from "../pages/About";
 const test = () => {
-  const status = true;
+  const ItemObj = {
+    name: "Ahasan",
+    city: "Dhaka",
+    phone: 123456,
+  };
 
-  switch (status) {
-    case true:
-      return <button style={{color:'red', marginLeft:'100px'}}>Logout Btn</button>;
-    case false:
-      return <button>Login Btn</button>;
-
-    default:
-      return null;
-  }
+  return (
+    <div>
+      <About item={ItemObj} />
+    </div>
+  );
 };
 
 export default test;
